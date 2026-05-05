@@ -5,7 +5,7 @@ but cannot always guarantee backwards compatibility. Changes that may **break co
 
 ## [Unreleased](https://github.com/unit8co/darts/tree/master)
 
-[Full Changelog](https://github.com/unit8co/darts/compare/0.44.0...master)
+[Full Changelog](https://github.com/unit8co/darts/compare/0.44.1...master)
 
 ### For users of the library:
 
@@ -13,7 +13,19 @@ but cannot always guarantee backwards compatibility. Changes that may **break co
 
 **Fixed**
 
-- Fixed a `ValueError` in `backtest()` when using `overlap_end=True` with `predict_likelihood_parameters=True` and a quantile metric. The final forecast window could extend beyond the series end, producing an empty intersection that caused a reshape failure in the metric computation. [#3101](https://github.com/unit8co/darts/pull/3101) by [Dennis Bader](https://github.com/dennisbader)
+**Dependencies**
+
+### For developers of the library:
+
+## [0.44.1](https://github.com/unit8co/darts/tree/0.44.1) (2026-05-05)
+
+### For users of the library:
+
+**Improved**
+
+**Fixed**
+
+- Fixed a `ValueError` in `backtest()` when using `overlap_end=True` with `predict_likelihood_parameters=True` and a quantile metric. The final forecast window could extend beyond the series end, producing an empty intersection that caused a reshape failure in the metric computation. [#3111](https://github.com/unit8co/darts/pull/3111) by [Dennis Bader](https://github.com/dennisbader)
 - Fixed rendering issues of `CustomBlockRNNModule` and `CustomRNNModule` in the documentation. [#3094](https://github.com/unit8co/darts/pull/3094) by [Zhihao Dai](https://github.com/daidahao)
 - Fixed rendering issues of `20-SKLearnModel-examples` notebook in the documentation. [#3094](https://github.com/unit8co/darts/pull/3094) by [Zhihao Dai](https://github.com/daidahao)
 
